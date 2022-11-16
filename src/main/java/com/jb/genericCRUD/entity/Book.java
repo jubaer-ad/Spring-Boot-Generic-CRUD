@@ -2,10 +2,18 @@ package com.jb.genericCRUD.entity;
 
 import com.jb.genericCRUD.Generics.entity.GenericDomainBasedEntity;
 import com.jb.genericCRUD.Generics.entity.GenericEntity;
+import lombok.*;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Table;
 
+@Entity
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "book")
 public class Book extends GenericDomainBasedEntity implements GenericEntity<Book> {
 

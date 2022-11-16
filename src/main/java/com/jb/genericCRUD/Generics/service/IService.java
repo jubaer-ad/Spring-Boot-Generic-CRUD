@@ -1,5 +1,6 @@
 package com.jb.genericCRUD.Generics.service;
 
+import com.jb.genericCRUD.Generics.entity.GenericDomainBasedEntity;
 import com.jb.genericCRUD.Generics.entity.GenericEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -18,5 +19,4 @@ public interface IService <E extends GenericEntity>{
 
     Page<E> getAll(Pageable pageable);
 
-    <T> E findByName(T t);
 }
